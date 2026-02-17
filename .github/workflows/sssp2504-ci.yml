@@ -1,0 +1,43 @@
+name: sssp2504-ci
+
+on:
+  push:
+    paths:
+      - 'sssp2504/**'
+      - 'scripts/**'
+      - 'reports/sssp2504-ci-threshold-policy.profiles.json'
+      - '.github/workflows/sssp2504-ci.yml'
+  pull_request:
+    paths:
+      - 'sssp2504/**'
+      - 'scripts/**'
+      - 'reports/sssp2504-ci-threshold-policy.profiles.json'
+      - '.github/workflows/sssp2504-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  test-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup build deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++ make python3
+
+      - name: Run sssp2504 CI gates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_EVENT_PATH: ${{ github.event_path }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_COMMENT_PUBLISH: ${{ vars.SSSP_PR_COMMENT_PUBLISH || '0' }}
+          THRESHOLD_PROFILE: ${{ vars.SSSP_THRESHOLD_PROFILE || 'ci-standard' }}
+        run: bash scripts/ci_sssp2504.sh

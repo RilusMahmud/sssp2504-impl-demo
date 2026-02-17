@@ -1,0 +1,12 @@
+{
+  "matrixSummary": "reports/sssp2504-scale-matrix-summary.json",
+  "requirements": {
+    "all_exact": true,
+    "sorting_us_p95_max": 7000,
+    "sorting_us_max": 8000,
+    "phases_p95_max": 10,
+    "phases_max": 12,
+    "relax_attempts_p95_max": 260000,
+    "relax_attempts_max": 280000
+  }
+}

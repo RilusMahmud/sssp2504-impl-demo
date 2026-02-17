@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-02-15T08:24:05.460030+00:00",
+  "repoCount": 1,
+  "repos": [
+    {
+      "repo": "sssp2504",
+      "path": "/home/claw/.openclaw/workspace",
+      "threshold_status": "PASS",
+      "drift7": "OK",
+      "drift30": "OK",
+      "exact": true,
+      "sorting_us": 2737,
+      "risk_score": 0
+    }
+  ]
+}

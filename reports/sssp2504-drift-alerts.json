@@ -1,0 +1,19 @@
+{
+  "window7": {
+    "count": 7,
+    "sorting_us_p95_drift_pct": -20.59088673987871,
+    "phases_p95_drift_pct": 0.0,
+    "relax_p95_drift_pct": -4.757170331386993,
+    "all_exact": true
+  },
+  "window30": {
+    "count": 9,
+    "sorting_us_p95_drift_pct": -1.7889722278532334,
+    "phases_p95_drift_pct": 0.0,
+    "relax_p95_drift_pct": 0.0,
+    "all_exact": true
+  },
+  "status7": "OK",
+  "status30": "OK",
+  "seasonality_hint": "Current bucket (d6-h08) is near seasonal baseline (-9.97%)."
+}

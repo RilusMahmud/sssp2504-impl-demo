@@ -1,0 +1,41 @@
+{
+  "matrixSummary": "reports/sssp2504-scale-matrix-summary.json",
+  "profiles": {
+    "local": {
+      "all_exact": true,
+      "sorting_us_p95_global_max": 22000,
+      "sorting_us_max_p95_max": 24000,
+      "phases_p95_global_max": 10,
+      "phases_max_p95_max": 12,
+      "relax_attempts_p95_global_max": 720000,
+      "relax_attempts_max_p95_max": 760000
+    },
+    "ci-fast": {
+      "all_exact": true,
+      "sorting_us_p95_global_max": 25000,
+      "sorting_us_max_p95_max": 29000,
+      "phases_p95_global_max": 10,
+      "phases_max_p95_max": 12,
+      "relax_attempts_p95_global_max": 760000,
+      "relax_attempts_max_p95_max": 820000
+    },
+    "ci-standard": {
+      "all_exact": true,
+      "sorting_us_p95_global_max": 28000,
+      "sorting_us_max_p95_max": 33000,
+      "phases_p95_global_max": 10,
+      "phases_max_p95_max": 12,
+      "relax_attempts_p95_global_max": 820000,
+      "relax_attempts_max_p95_max": 900000
+    },
+    "ci": {
+      "all_exact": true,
+      "sorting_us_p95_global_max": 28000,
+      "sorting_us_max_p95_max": 33000,
+      "phases_p95_global_max": 10,
+      "phases_max_p95_max": 12,
+      "relax_attempts_p95_global_max": 820000,
+      "relax_attempts_max_p95_max": 900000
+    }
+  }
+}

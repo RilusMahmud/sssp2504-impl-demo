@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-02-15T08:24:05.492560+00:00",
+  "window": {
+    "last7_count": 9,
+    "prev7_count": 0
+  },
+  "last7": {
+    "count": 9,
+    "sorting_p95_med": 21002,
+    "phases_p95_med": 10,
+    "relax_p95_med": 697409,
+    "exact_all": true,
+    "sorting_std": 1874.9249927383926
+  },
+  "prev7": null,
+  "deltas": null,
+  "confidence": 0.911,
+  "top_actions": [
+    "No major regressions detected; keep monitoring and accumulate more weekly samples."
+  ],
+  "max_repo_risk": 0
+}
