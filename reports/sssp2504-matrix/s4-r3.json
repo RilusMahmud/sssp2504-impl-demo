@@ -1,0 +1,22 @@
+{
+  "algorithm": "directed_sssp_sorting_barrier",
+  "n": 2000,
+  "m": 12000,
+  "source": 0,
+  "seed": 2000107,
+  "params": {"level": 3, "k": 4, "t": 2},
+  "timing_us": {"dijkstra": 371, "sorting_barrier": 845},
+  "timing_ms": {"dijkstra": 0.371, "sorting_barrier": 0.845},
+  "validation": {"finite_vertices": 1997, "exact_distance_matches": 1997, "mismatch_count": 0, "max_abs_error": 0, "mean_abs_error": 0, "all_finite_match": true},
+  "run": {"phases": 7, "visited_total": 1994},
+  "metrics": {
+    "recursive_calls": 10,
+    "find_pivots_calls": 10,
+    "find_pivots_rounds": 17,
+    "relax_attempts": 45232,
+    "relax_successes": 5177,
+    "boundary_advancement_events": 0,
+    "partial_returns": 4,
+    "max_u_size": 1849
+  }
+}
